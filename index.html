@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo Profissional – Evandro Ricardo da Silva – Técnico em Informática e Suporte Administrativo</title>
+  <meta name="description" content="Currículo profissional de Evandro Ricardo da Silva – Técnico em Informática e Suporte Administrativo, com ampla experiência em tecnologia, manutenção, redes, webdesign e administração.">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Segoe UI','Roboto',Arial,sans-serif;
+      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      color:#e6e6e6;
+      line-height:1.6;
+      padding:20px;
+    }
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      background:#1c1f26;
+      border-radius:10px;
+      box-shadow:0 0 40px rgba(0,0,0,0.4);
+      overflow:hidden;
+    }
+    header{
+      background:linear-gradient(135deg,#00b4db,#0083b0);
+      text-align:center;
+      color:white;
+      padding:50px 30px;
+    }
+    header h1{font-size:34px;margin-bottom:10px;font-weight:700;}
+    header h2{font-size:18px;font-weight:500;opacity:0.9;margin-bottom:15px;}
+    header p{font-size:15px;max-width:700px;margin:0 auto;opacity:0.95;}
+    .contact-bar{
+      background:#11151c;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:10px;
+      padding:20px 40px;
+      border-bottom:1px solid #333;
+      font-size:14px;
+    }
+    .contact-item{display:flex;align-items:center;gap:10px;color:#e0e0e0;}
+    .contact-icon{color:#00b4db;}
+    .content{padding:40px;}
+    .section{margin-bottom:35px;}
+    .section-title{
+      color:#00b4db;
+      border-bottom:2px solid #00b4db;
+      margin-bottom:20px;
+      font-size:18px;
+      font-weight:700;
+      padding-bottom:8px;
+    }
+    .objective, .summary{
+      background:#1a222d;
+      border-left:4px solid #00b4db;
+      border-radius:6px;
+      padding:20px;
+      color:#cfd8dc;
+      line-height:1.7;
+    }
+    .job-item{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #2c3e50;}
+    .job-header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;}
+    .job-company{font-weight:700;color:#fff;}
+    .job-position{color:#00b4db;font-weight:600;font-size:14px;}
+    .job-period{background:#2c3e50;padding:2px 8px;border-radius:10px;font-size:12px;color:#ccc;}
+    .job-description{font-size:14px;color:#d0d0d0;}
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+    .skill-item{background:#1a222d;padding:15px;border-left:3px solid #00b4db;border-radius:6px;}
+    .skill-item strong{color:#fff;}
+    .education-item,.course-item{
+      background:#1a222d;
+      padding:15px;
+      border-left:3px solid #0083b0;
+      border-radius:6px;
+      margin-bottom:10px;
+      font-size:14px;
+      color:#d0d0d0;
+    }
+    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;}
+    .info-box{
+      background:linear-gradient(135deg,#00b4db,#0083b0);
+      color:white;
+      text-align:center;
+      border-radius:6px;
+      padding:18px;
+      font-weight:600;
+    }
+    .download-btn{
+      position:fixed;
+      top:20px;
+      right:20px;
+      background:#00b4db;
+      color:white;
+      border:none;
+      padding:12px 22px;
+      border-radius:6px;
+      font-size:14px;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow:0 4px 12px rgba(0,180,219,0.4);
+      transition:all 0.3s ease;
+      z-index:1000;
+    }
+    .download-btn:hover{background:#0083b0;transform:translateY(-2px);}
+    @media(max-width:768px){
+      .content{padding:20px;}
+      .download-btn{position:static;width:100%;margin-bottom:20px;}
+    }
+    @media print{body{background:white;color:black;padding:0;}.container{box-shadow:none;}.download-btn{display:none;}}
+  </style>
+</head>
+<body>
+  <button class="download-btn" onclick="window.print()">⬇️ Download do currículo em PDF</button>
+  <div class="container">
+    <header>
+      <h1>Evandro Ricardo da Silva</h1>
+      <h2>Técnico em Informática e Suporte Administrativo</h2>
+      <p>Profissional com ampla experiência em tecnologia, manutenção e administração. Atuação em infraestrutura, suporte técnico, portaria e gestão de serviços. Perfil prático, organizado e comprometido com resultados e qualidade no trabalho.</p>
+    </header>
+    <div class="contact-bar">
+      <div class="contact-item"><span class="contact-icon">📍</span> Praia Grande/SP</div>
+      <div class="contact-item"><span class="contact-icon">📧</span> tecnico.evandro@outlook.com</div>
+      <div class="contact-item"><span class="contact-icon">📱</span> (13) 99153-5257</div>
+      <div class="contact-item"><span class="contact-icon">🚗</span> CNH A e B – válida</div>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h3 class="section-title">Resumo Profissional</h3>
+        <div class="summary">
+          Profissional versátil com experiência consolidada em <strong>tecnologia, manutenção, redes e suporte técnico</strong>. Atuação em ambientes administrativos e operacionais, com foco em eficiência, organização e atendimento de qualidade. Experiência também nas áreas de <strong>manutenção predial</strong> e <strong>apoio à infraestrutura</strong>. Dedicado, ético e com facilidade para trabalhar em equipe.
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="section-title">Experiência Profissional</h3>
+        <div class="job-item">
+          <div class="job-header">
+            <div><div class="job-company">Casa de Repouso Reviver – Praia Grande/SP</div><div class="job-position">Auxiliar Técnico de Manutenção</div></div>
+            <div class="job-period">Mar/2025 – Out/2025</div>
+          </div>
+          <div class="job-description">
+            Execução de serviços de manutenção elétrica, hidráulica e estrutural. Apoio técnico ao funcionamento da instituição, realizando manutenção preventiva e corretiva em equipamentos e sistemas.
+          </div>
+        </div>
+        <div class="job-item">
+          <div class="job-header">
+            <div><div class="job-company">Alternativa Assessoria Condominial Ltda.</div><div class="job-position">Técnico em Informática / Suporte Administrativo</div></div>
+            <div class="job-period">Jun/2019 – Out/2020</div>
+          </div>
+          <div class="job-description">
+            Suporte técnico e manutenção de rede interna, atendimento a usuários, gestão de documentos e auxílio nos processos administrativos e financeiros da empresa.
+          </div>
+        </div>
+        <div class="job-item">
+          <div class="job-header">
+            <div><div class="job-company">Lupi Informática Ltda – ME</div><div class="job-position">Gerente / Técnico em Informática / Webdesigner</div></div>
+            <div class="job-period">2000 – 2009</div>
+          </div>
+          <div class="job-description">
+            Responsável pela administração da loja, gestão de estoque e atendimento técnico. Desenvolvimento de websites e manutenção de sistemas em HTML, Joomla, WordPress e Magento.
+          </div>
+        </div>
+        <div class="job-item">
+          <div class="job-header">
+            <div><div class="job-company">Koerich Engenharia e Telecomunicações Ltda.</div><div class="job-position">Técnico Instalador-Reparador</div></div>
+          </div>
+          <div class="job-description">
+            Instalação e manutenção de linhas telefônicas e conexões de internet banda larga. Diagnóstico e reparo técnico com foco em qualidade e segurança.
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="section-title">Formação Acadêmica</h3>
+        <div class="education-item"><strong>Técnico em Informática</strong> – ETEC de Praia Grande – Concluído em 2014</div>
+      </div>
+      <div class="section">
+        <h3 class="section-title">Certificações e Cursos</h3>
+        <div class="course-item"><strong>Manutenção de Computadores</strong> – SENAC Santos</div>
+        <div class="course-item"><strong>Cabeamento Estruturado em Redes</strong> – SENAI São Paulo</div>
+        <div class="course-item"><strong>Desenvolvimento de Softwares</strong> – SENAI São Paulo</div>
+        <div class="course-item"><strong>Eletrônica de Bancada e Manutenção de Notebooks</strong> – TECNOPONTA Santos</div>
+      </div>
+      <div class="section">
+        <h3 class="section-title">Habilidades Técnicas</h3>
+        <div class="skills-grid">
+          <div class="skill-item"><strong>Informática:</strong> manutenção de PCs, notebooks e redes locais</div>
+          <div class="skill-item"><strong>Administração:</strong> organização de documentos e controle de processos internos</div>
+          <div class="skill-item"><strong>Redes:</strong> configuração e manutenção de roteadores e cabeamento estruturado</div>
+          <div class="skill-item"><strong>Web:</strong> criação e manutenção de sites em HTML, CSS e WordPress</div>
+          <div class="skill-item"><strong>Softwares:</strong> Windows, Linux, Office, ferramentas Google e ERP Superlógica</div>
+          <div class="skill-item"><strong>Manutenção Predial:</strong> elétrica, hidráulica e pequenos reparos</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="section-title">Informações Adicionais</h3>
+        <div class="info-grid">
+          <div class="info-box">CNH categorias A e B – válida</div>
+          <div class="info-box">Disponibilidade imediata</div>
+          <div class="info-box">Residente em Praia Grande/SP</div>
+          <div class="info-box">Disponível para mudança</div>
+        </div>
+      </div>
+      <div class="section" style="text-align:center;color:#b0bec5;font-style:italic;">
+        “Tecnologia e comprometimento são as bases do meu trabalho.”
+      </div>
+    </div>
+  </div>
+</body>
+</html>
