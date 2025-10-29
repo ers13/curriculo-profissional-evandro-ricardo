@@ -3,137 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo Profissional – Evandro Ricardo da Silva – Profissional de Suporte Operacional e Infraestrutura Multidisciplinar</title>
-  <meta name="description" content="Currículo profissional de Evandro Ricardo da Silva – Especialista em Suporte Administrativo e Infraestrutura de TI, com foco em gestão de rotinas, documentação, redes e sistemas.">
+  <title>Currículo Profissional – Evandro Ricardo da Silva – Suporte Operacional e Infraestrutura Multidisciplinar</title>
+  <meta name="description" content="Currículo de Evandro Ricardo da Silva, profissional multidisciplinar com experiência em Suporte Operacional, Infraestrutura de TI, Manutenção Predial e Gestão Administrativa.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
+    /* Reset e Configurações Base */
     *{margin:0;padding:0;box-sizing:border-box;}
     body{
       font-family:'Segoe UI','Roboto',Arial,sans-serif;
-      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-      color:#e6e6e6;
+      background:linear-gradient(135deg,#e0e0e0,#f5f5f5);
+      color:#333;
       line-height:1.6;
       padding:20px;
     }
     .container{
       max-width:1000px;
       margin:0 auto;
-      background:#1c1f26;
-      border-radius:10px;
-      box-shadow:0 0 40px rgba(0,0,0,0.4);
+      background:white;
+      border-radius:12px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
       overflow:hidden;
     }
+
+    /* Cabeçalho e Contato */
     header{
-      background:linear-gradient(135deg,#00b4db,#0083b0);
-      text-align:center;
+      background:#007bff; /* Azul primário */
       color:white;
-      padding:50px 30px;
+      padding:40px 30px 20px;
+      text-align:center;
     }
-    header h1{font-size:34px;margin-bottom:10px;font-weight:700;}
-    header h2{font-size:18px;font-weight:500;opacity:0.9;margin-bottom:15px;}
-    header p{font-size:15px;max-width:700px;margin:0 auto;opacity:0.95;}
+    header h1{font-size:36px;margin-bottom:5px;font-weight:700;}
+    header h2{font-size:20px;font-weight:400;opacity:0.9;margin-bottom:20px;}
     .contact-bar{
-      background:#11151c;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:10px;
-      padding:20px 40px;
-      border-bottom:1px solid #333;
+      background:#f1f1f1; /* Cinza claro para barra de contato */
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+      padding:15px 40px;
       font-size:14px;
+      color:#555;
+      border-bottom:2px solid #ddd;
     }
-    .contact-item{display:flex;align-items:center;gap:10px;color:#e0e0e0;}
-    .contact-icon{color:#00b4db;}
+    .contact-item{display:flex;align-items:center;gap:8px;}
+    .contact-icon{color:#007bff;font-size:16px;}
+
+    /* Conteúdo Principal */
     .content{padding:40px;}
-    .section{margin-bottom:35px;}
+    .section{margin-bottom:30px;}
     .section-title{
-      color:#00b4db;
-      border-bottom:2px solid #00b4db;
+      color:#007bff;
+      border-bottom:3px solid #007bff;
       margin-bottom:20px;
-      font-size:18px;
+      font-size:20px;
       font-weight:700;
-      padding-bottom:8px;
+      padding-bottom:5px;
+      text-transform:uppercase;
     }
-    .objective, .summary{
-      background:#1a222d;
-      border-left:4px solid #00b4db;
+
+    /* Resumo Profissional (Destaque) */
+    .summary{
+      background:#f8f9fa;
+      border-left:5px solid #007bff;
       border-radius:6px;
       padding:20px;
-      color:#cfd8dc;
-      line-height:1.7;
+      color:#333;
+      line-height:1.8;
+      font-size:15px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
     }
-    .job-item{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #2c3e50;}
-    .job-header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;}
-    .job-company{font-weight:700;color:#fff;}
-    .job-position{color:#00b4db;font-weight:600;font-size:14px;}
-    .job-period{background:#2c3e50;padding:2px 8px;border-radius:10px;font-size:12px;color:#ccc;}
-    .job-description{font-size:14px;color:#d0d0d0;}
-    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
-    .skill-item{background:#1a222d;padding:15px;border-left:3px solid #00b4db;border-radius:6px;}
-    .skill-item strong{color:#fff;}
-    .education-item,.course-item{
-      background:#1a222d;
+    .summary strong{color:#007bff;}
+    .summary ul{margin-top:10px; list-style-position: inside;}
+
+    /* Experiência Profissional */
+    .job-item{margin-bottom:25px;}
+    .job-header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:4px;}
+    .job-company{font-weight:700;color:#333;font-size:16px;}
+    .job-position{color:#28a745;font-weight:600;font-size:14px;}
+    .job-period{background:#e9ecef;padding:3px 10px;border-radius:15px;font-size:12px;color:#6c757d;}
+    .job-description{font-size:14px;padding-left:0;}
+    .job-description ul{list-style:disc;margin-top:5px;padding-left:20px;}
+    .job-description li{margin-bottom:5px;}
+    .job-description strong{color:#007bff;}
+
+    /* Habilidades Técnicas */
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px;}
+    .skill-item{
+      background:#f8f9fa;
       padding:15px;
-      border-left:3px solid #0083b0;
+      border-left:4px solid #28a745; /* Verde para habilidades */
       border-radius:6px;
-      margin-bottom:10px;
-      font-size:14px;
-      color:#d0d0d0;
     }
-    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;}
+    .skill-item strong{color:#28a745;}
+
+    /* Formação e Cursos */
+    .education-item, .course-item{
+      padding:12px 15px;
+      border-left:3px solid #6c757d;
+      border-radius:4px;
+      margin-bottom:8px;
+      font-size:14px;
+      background:#f8f9fa;
+    }
+    .education-item strong, .course-item strong {color:#333;}
+
+    /* Informações Adicionais */
+    .info-grid{display:flex;justify-content:space-around;gap:15px;margin-top:10px;}
     .info-box{
-      background:linear-gradient(135deg,#00b4db,#0083b0);
+      background:#28a745;
       color:white;
       text-align:center;
       border-radius:6px;
-      padding:18px;
+      padding:12px;
       font-weight:600;
+      flex-grow:1;
     }
+
+    /* Botão de Download */
     .download-btn{
-      position:fixed;
-      top:20px;
-      right:20px;
-      background:#00b4db;
-      color:white;
-      border:none;
-      padding:12px 22px;
-      border-radius:6px;
-      font-size:14px;
-      font-weight:600;
-      cursor:pointer;
-      box-shadow:0 4px 12px rgba(0,180,219,0.4);
-      transition:all 0.3s ease;
-      z-index:1000;
+        position:fixed;
+        top:20px;
+        right:20px;
+        background:#dc3545; /* Vermelho para destaque */
+        color:white;
+        border:none;
+        padding:12px 22px;
+        border-radius:6px;
+        font-size:14px;
+        font-weight:600;
+        cursor:pointer;
+        box-shadow:0 4px 12px rgba(220,53,69,0.4);
+        transition:all 0.3s ease;
+        z-index:1000;
     }
-    .download-btn:hover{background:#0083b0;transform:translateY(-2px);}
+    .download-btn:hover{background:#c82333;transform:translateY(-2px);}
+
+    /* Responsividade e Impressão */
     @media(max-width:768px){
       .content{padding:20px;}
+      header h1{font-size:30px;}
+      .job-header{flex-direction:column;align-items:flex-start;}
+      .contact-bar{justify-content:flex-start;padding:15px 20px;}
       .download-btn{position:static;width:100%;margin-bottom:20px;}
     }
-    @media print{body{background:white;color:black;padding:0;}.container{box-shadow:none;}.download-btn{display:none;}}
+    @media print{
+      .download-btn{display:none;} /* Oculta o botão ao imprimir */
+      body{background:white;color:black;padding:0;}
+      .container{box-shadow:none;border:1px solid #ccc;}
+      .contact-bar{background:#f1f1f1;border-bottom:1px solid #ccc;color:#333;}
+      header{background:#007bff;print-color-adjust:exact;color:white;}
+      .contact-icon, .section-title, .job-position{color:#007bff !important;print-color-adjust:exact;}
+      .skill-item strong{color:#28a745 !important;print-color-adjust:exact;}
+    }
   </style>
 </head>
 <body>
-  <button class="download-btn" onclick="window.print()">⬇️ Download do currículo em PDF</button>
+  <button class="download-btn" onclick="window.print()">⬇️ Download Currículo em PDF</button>
+
   <div class="container">
     <header>
       <h1>Evandro Ricardo da Silva</h1>
-      <h2>"Profissional de Suporte Operacional e Infraestrutura Multidisciplinar"</h2>
-      <p>Profissional multidisciplinar com sólida experiência nas esferas administrativa, técnica e operacional. Especializado em gestão de rotinas, controle de documentação e suporte técnico/infraestrutura, com um histórico comprovado em otimizar o desempenho das operações. Possuo profundos conhecimentos em T.I. (manutenção de hardware, redes e suporte em informática), complementados por expertise em manutenção predial (elétrica, hidráulica e reparos gerais), além de desenvolvimento e manutenção de websites. Perfil dinâmico, responsável e versátil, com foco em organização, eficiência e qualidade, garantindo a continuidade das operações e o desenvolvimento da equipe.</p>
+      <h2>Profissional de Suporte Operacional e Infraestrutura Multidisciplinar</h2>
     </header>
     <div class="contact-bar">
-      <div class="contact-item"><span class="contact-icon">📍</span> Praia Grande/SP</div>
-      <div class="contact-item"><span class="contact-icon">📧</span> tecnico.evandro@outlook.com</div>
-      <div class="contact-item"><span class="contact-icon">📱</span> (13) 99153-5257</div>
-      <div class="contact-item"><span class="contact-icon">🚗</span> CNH A e B – válida</div>
+      <div class="contact-item"><i class="fas fa-map-marker-alt contact-icon"></i> Praia Grande/SP</div>
+      <div class="contact-item"><i class="fas fa-envelope contact-icon"></i> tecnico.evandro@outlook.com</div>
+      <div class="contact-item"><i class="fas fa-phone contact-icon"></i> (13) 99153-5257</div>
+      <div class="contact-item"><i class="fas fa-car contact-icon"></i> CNH A e B – Disponibilidade Logística</div>
     </div>
     <div class="content">
       <div class="section">
-        <h3 class="section-title">Resumo Profissional</h3>
+        <h3 class="section-title">Resumo Profissional | Perfil Chave</h3>
         <div class="summary">
-          <p>Profissional com mais de 10 anos de experiência em <strong>Suporte Administrativo e Infraestrutura de TI</strong>, com foco em otimização de rotinas, controle de documentos e atendimento ao cliente. Possuo sólida experiência em redes, manutenção de hardware/software e sistemas de gestão (Superlógica, PRG). Sou habilitado com <strong>CNH categorias A e B</strong> (válida) e busco uma oportunidade para aplicar minha visão sistêmica e habilidades de gestão no aprimoramento das operações da sua empresa.</p>
+          <p>Profissional <strong>multidisciplinar e estratégico</strong> com mais de 10 anos de experiência nas áreas <strong>Administrativa, Técnica e Operacional</strong>. Foco em garantir a <strong>eficiência e a continuidade</strong> de todos os processos, desde a infraestrutura de T.I. até a manutenção predial.</p>
+          <ul>
+            <li><strong>Core Competencies:</strong> Suporte Técnico em T.I. (Hardware, Redes, Software), Gestão de Rotinas Administrativas, Controle de Documentação e Otimização de Sistemas (Superlógica, PRG).</li>
+            <li><strong>Diferencial Técnico:</strong> Amplo conhecimento em manutenção predial (Elétrica, Hidráulica, Reparos Gerais), além de desenvolvimento web (WordPress, Joomla) para soluções digitais.</li>
+            <li><strong>Logística:</strong> <strong>CNH categorias A e B (válida)</strong>, com prontidão e proficiência para atuar no suporte logístico e deslocamentos operacionais.</li>
+            <li><strong>Busca:</strong> Unir organização, eficiência e qualidade em um ambiente que valorize a <strong>visão sistêmica</strong> e a capacidade de atuação em diversas frentes.</li>
+          </ul>
         </div>
       </div>
+
       <div class="section">
-        <h3 class="section-title">Experiência Profissional</h3>
+        <h3 class="section-title">Experiência Profissional | Destaque em Resultados</h3>
         <div class="job-item">
           <div class="job-header">
             <div><div class="job-company">Casa de Repouso Reviver – Praia Grande/SP</div><div class="job-position">Auxiliar de Manutenção e Suporte Operacional</div></div>
@@ -141,10 +194,9 @@
           </div>
           <div class="job-description">
             <ul>
-              <li><strong>Executou</strong> manutenção preventiva e corretiva em sistemas elétricos, hidráulicos e estruturais, garantindo a operação ininterrupta da instituição.</li>
-              <li><strong>Prestou</strong> suporte técnico primário a equipamentos de informática e rede, resolvendo incidentes de forma rápida e eficiente.</li>
-              <li><strong>Gerenciou</strong> o inventário de materiais e ferramentas, otimizando o controle de estoque e a aquisição de suprimentos.</li>
-              <li><strong>Assegurou</strong> a conformidade com normas de segurança e qualidade nos serviços de manutenção predial.</li>
+              <li><strong>Assegurou a continuidade operacional</strong> da instituição através da execução de manutenção preventiva e corretiva (elétrica, hidráulica e estrutural).</li>
+              <li><strong>Minimizou interrupções</strong> prestando suporte técnico primário a equipamentos de informática e rede, resolvendo incidentes *in loco*.</li>
+              <li><strong>Otimizou o controle de estoque</strong> gerenciando o inventário de materiais e ferramentas, contribuindo para a eficiência na aquisição de suprimentos.</li>
             </ul>
           </div>
         </div>
@@ -155,10 +207,9 @@
           </div>
           <div class="job-description">
             <ul>
-              <li><strong>Administrou</strong> a rede interna e a infraestrutura de TI, garantindo a conectividade e a segurança dos dados da empresa.</li>
-              <li><strong>Coordenou</strong> a gestão de documentos e o arquivo físico/digital, implementando um sistema que melhorou a organização e a recuperação de informações.</li>
-              <li><strong>Prestou</strong> suporte técnico de primeiro nível a todos os usuários, reduzindo o tempo de inatividade dos sistemas e equipamentos.</li>
-              <li><strong>Auxiliou</strong> nos processos administrativos e financeiros, incluindo o uso de sistemas de gestão (Superlógica), otimizando as rotinas do setor.</li>
+              <li><strong>Garantia de Infraestrutura:</strong> Administrou a rede e a infraestrutura de TI, assegurando conectividade e segurança de dados essenciais.</li>
+              <li><strong>Otimização de Documentos:</strong> Coordenou a gestão de arquivos físicos/digitais, implementando um sistema que <strong>melhorou a organização e reduziu o tempo de recuperação</strong> de informações.</li>
+              <li><strong>Suporte Estratégico:</strong> Prestou suporte técnico de primeiro nível, <strong>reduzindo o tempo de inatividade</strong> dos sistemas e auxiliando rotinas administrativas com uso de sistemas de gestão (Superlógica).</li>
             </ul>
           </div>
         </div>
@@ -169,10 +220,9 @@
           </div>
           <div class="job-description">
             <ul>
-              <li><strong>Gerenciou</strong> as operações da loja, incluindo a gestão de estoque, controle de caixa e coordenação da equipe técnica.</li>
-              <li><strong>Otimizou</strong> o atendimento ao cliente e o suporte técnico, resultando em alta satisfação e fidelização.</li>
-              <li><strong>Desenvolveu</strong> e manteve websites e sistemas (HTML, Joomla, WordPress, Magento), aplicando conhecimentos de webdesign e SEO.</li>
-              <li><strong>Realizou</strong> manutenção e reparo de hardware e software, garantindo a qualidade dos serviços prestados.</li>
+              <li><strong>Gestão de Equipe e Operações:</strong> Gerenciou a loja, incluindo gestão de estoque, controle financeiro e coordenação da equipe técnica.</li>
+              <li><strong>Fidelização de Clientes:</strong> Otimizou o atendimento e o suporte técnico, resultando em <strong>alta satisfação do cliente</strong> e aumento da fidelização.</li>
+              <li><strong>Desenvolvimento Web:</strong> Desenvolveu e realizou manutenção de websites e sistemas (HTML, WordPress, Joomla), aplicando conhecimentos de webdesign e SEO.</li>
             </ul>
           </div>
         </div>
@@ -183,9 +233,8 @@
           </div>
           <div class="job-description">
             <ul>
-              <li><strong>Instalou</strong> e <strong>reparou</strong> linhas telefônicas e conexões de internet banda larga, seguindo rigorosos padrões técnicos.</li>
-              <li><strong>Conduziu</strong> diagnósticos técnicos em campo, resolvendo falhas de conectividade e assegurando a qualidade do serviço.</li>
-              <li><strong>Manteve</strong> um alto índice de resolutividade, minimizando o retrabalho e o tempo de espera do cliente.</li>
+              <li><strong>Alta Resolutividade:</strong> Instalou e reparou linhas telefônicas e conexões de internet banda larga, <strong>mantendo um alto índice de resolutividade</strong> em campo.</li>
+              <li><strong>Diagnóstico Técnico:</strong> Conduziu diagnósticos técnicos em campo, resolvendo falhas de conectividade de forma precisa.</li>
             </ul>
           </div>
         </div>
@@ -196,62 +245,60 @@
           </div>
           <div class="job-description">
             <ul>
-              <li><strong>Realizou</strong> o controle de acesso de moradores, visitantes e prestadores de serviço, garantindo a segurança e a conformidade com as normas do condomínio.</li>
-              <li><strong>Prestou</strong> atendimento e suporte primário a moradores, encaminhando solicitações à administração e registrando ocorrências.</li>
-              <li><strong>Auxiliou</strong> na manobra de veículos (Manobrista), demonstrando atenção e responsabilidade no manejo de bens.</li>
+              <li><strong>Segurança e Conformidade:</strong> Realizou o controle de acesso, garantindo a segurança e o registro de visitantes.</li>
+              <li><strong>Suporte ao Cliente:</strong> Prestou atendimento primário aos moradores e auxiliou na manobra de veículos (<strong>Manobrista</strong>), demonstrando responsabilidade no manejo de bens.</li>
             </ul>
           </div>
         </div>
-        <div class="job-item">
+        <div class="job-item" style="border-bottom: none;">
           <div class="job-header">
             <div><div class="job-company">Edifício São Patrício</div><div class="job-position">Suporte à Operação e Atendimento</div></div>
             <div class="job-period">Jan/1997 a Out/1997</div>
           </div>
           <div class="job-description">
             <ul>
-              <li><strong>Monitorou</strong> e <strong>controlou</strong> o fluxo de pessoas e veículos, mantendo o registro de entrada e saída para fins de segurança.</li>
-              <li><strong>Colaborou</strong> com a administração na distribuição de correspondências e na organização de documentos operacionais.</li>
-              <li><strong>Manteve</strong> a comunicação eficiente entre moradores, síndico e prestadores de serviço.</li>
+              <li>Monitorou o fluxo de pessoas e veículos para fins de segurança e organização.</li>
+              <li>Colaborou na distribuição de correspondências e na organização de documentos operacionais.</li>
             </ul>
           </div>
         </div>
       </div>
+
       <div class="section">
-        <h3 class="section-title">Formação Acadêmica</h3>
+        <h3 class="section-title">Habilidades Técnicas e Competências</h3>
+        <div class="skills-grid">
+          <div class="skill-item"><strong>Gestão & Administrativo:</strong> Controle de Documentos, Inventário, Logística Operacional, Atendimento ao Cliente. Sistemas ERP (Superlógica, PRG).</div>
+          <div class="skill-item"><strong>Tecnologia da Informação (T.I.):</strong> Manutenção Preventiva/Corretiva de Hardware (PCs/Notebooks), Instalação/Configuração de SO (Windows, Linux), Pacote Office – Avançado.</div>
+          <div class="skill-item"><strong>Infraestrutura e Redes:</strong> Configuração de Redes Locais (LAN), Cabeamento Estruturado (SENAI), Diagnóstico de Conectividade, Roteadores.</div>
+          <div class="skill-item"><strong>Manutenção Predial & Reparos:</strong> Conhecimento em Elétrica Básica, Hidráulica, Reparos Estruturais e Eletrônica de Bancada.</div>
+          <div class="skill-item"><strong>Desenvolvimento Web:</strong> Criação e Manutenção de Sites (HTML, CSS), CMS (WordPress, Joomla, Magento).</div>
+          <div class="skill-item"><strong>Competências Comportamentais:</strong> Versatilidade, Organização, Comunicação Interpessoal, Proatividade e Foco em Solução de Problemas.</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title">Formação Acadêmica e Profissional</h3>
         <div class="education-item"><strong>Técnico em Informática</strong> – ETEC de Praia Grande – Concluído em 2014</div>
-		<div class="education-item"><strong>Análise e Desenvolvimento de Sistemas</strong> – FATEC de Praia Grande – A concluir</div>
-		</div>
+		    <div class="education-item"><strong>Análise e Desenvolvimento de Sistemas</strong> – FATEC de Praia Grande – A concluir (Em curso)</div>
+		  </div>
+
       <div class="section">
-        <h3 class="section-title">Certificações e Cursos Complementares</h3>
-        <div class="course-item"><strong>Manutenção de Computadores</strong> – SENAC Santos</div>
+        <h3 class="section-title">Certificações e Cursos</h3>
         <div class="course-item"><strong>Cabeamento Estruturado em Redes</strong> – SENAI São Paulo</div>
         <div class="course-item"><strong>Desenvolvimento de Softwares</strong> – SENAI São Paulo</div>
         <div class="course-item"><strong>Eletrônica de Bancada e Manutenção de Notebooks</strong> – TECNOPONTA Santos</div>
+        <div class="course-item"><strong>Manutenção de Computadores</strong> – SENAC Santos</div>
         <div class="course-item"><strong>Sistemas de Gestão</strong> – Treinamento em Superlógica e PRG</div>
       </div>
+
       <div class="section">
-        <h3 class="section-title">Habilidades Técnicas</h3>
-        <div class="skills-grid">
-          <div class="skill-item"><strong>Administrativas:</strong> Controle de Documentos, Inventário, Logística Operacional, Atendimento ao Cliente, Uso de Sistemas ERP (Superlógica, PRG).</div>
-          <div class="skill-item"><strong>Informática (Hardware/Software):</strong> Manutenção Preventiva e Corretiva de PCs/Notebooks, Instalação e Configuração de Sistemas Operacionais (Windows, Linux), Pacote Office – Avançado.</div>
-          <div class="skill-item"><strong>Redes e Infraestrutura:</strong> Configuração de Redes Locais (LAN), Cabeamento Estruturado, Roteadores, Diagnóstico e Reparo de Conectividade.</div>
-          <div class="skill-item"><strong>Web e Design:</strong> Desenvolvimento e Manutenção de Sites (HTML, CSS), Plataformas CMS (WordPress, Joomla, Magento).</div>
-          <div class="skill-item"><strong>Manutenção & Reparos:</strong> Conhecimento em Elétrica Básica, Hidráulica, Reparos Prediais e Eletrônica de Bancada.</div>
-          <div class="skill-item"><strong>Competências Transferíveis:</strong> Organização, Comunicação Interpessoal, Resolução de Problemas, Trabalho em Equipe.</div>
-        </div>
-      </div>
-      <div class="section">
-        <h3 class="section-title">Informações Adicionais</h3>
+        <h3 class="section-title">Logística e Informações Chave</h3>
         <div class="info-grid">
-          <div class="info-box">CNH categorias A e B – válida</div>
-          <div class="info-box">Disponibilidade imediata para início</div>
-          <div class="info-box">Residente em Praia Grande/SP</div>
+          <div class="info-box"><i class="fas fa-car"></i> CNH categorias A e B – <strong>Válida</strong></div>
+          <div class="info-box"><i class="fas fa-calendar-check"></i> Disponibilidade imediata</div>
+          <div class="info-box"><i class="fas fa-home"></i> Residente em Praia Grande/SP</div>
         </div>
       </div>
-      <div class="section" style="text-align:center;color:#b0bec5;font-style:italic;">
-        "Tecnologia e comprometimento são as bases do meu trabalho."
-      </div>
-      <!-- keywords: administração, controle de documentos, inventário, logística, suporte técnico, redes, manutenção preventiva, atendimento ao cliente, Word, Excel, Superlógica, PRG, WordPress, cabeamento estruturado, CNH A/B -->
     </div>
   </div>
 </body>
