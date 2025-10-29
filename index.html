@@ -107,13 +107,13 @@
     }
     .education-item strong, .course-item strong {color:#333;}
 
-    /* Informações Adicionais (CORREÇÃO DE RESPONSIVIDADE AQUI) */
+    /* Informações Adicionais (CORRIGIDO) */
     .info-grid{
         display:flex;
         justify-content:space-around;
         gap:15px;
         margin-top:10px;
-        flex-wrap: wrap; /* NOVO: Permite quebra de linha em telas pequenas */
+        flex-wrap: wrap; 
     }
     .info-box{
       background:#28a745;
@@ -152,7 +152,6 @@
       .contact-bar{justify-content:flex-start;padding:15px 20px;}
       .download-btn{position:static;width:100%;margin-bottom:20px;}
       
-      /* NOVO: Força o empilhamento dos boxes de informação */
       .info-box {
           flex-basis: 100%;
           margin-bottom: 15px;
@@ -162,13 +161,33 @@
       }
     }
     @media print{
-      .download-btn{display:none;} /* Oculta o botão ao imprimir */
+      .download-btn{display:none;} 
       body{background:white;color:black;padding:0;}
       .container{box-shadow:none;border:1px solid #ccc;}
       .contact-bar{background:#f1f1f1;border-bottom:1px solid #ccc;color:#333;}
       header{background:#007bff;print-color-adjust:exact;color:white;}
       .contact-icon, .section-title, .job-position{color:#007bff !important;print-color-adjust:exact;}
       .skill-item strong{color:#28a745 !important;print-color-adjust:exact;}
+
+      /* CORREÇÕES PARA IMPRESSÃO (PDF) */
+      .info-grid {
+          display: block; /* Desliga o flexbox para evitar problemas de alinhamento no print */
+          text-align: left; /* Alinha o bloco principal à esquerda */
+          margin-top: 5px;
+      }
+      .info-box {
+          background: white !important; /* Fundo branco para não gastar tinta */
+          color: black !important; /* Cor do texto PRETO para máximo contraste */
+          text-align: left !important; /* Alinhamento do texto DENTRO do box à esquerda */
+          border: 1px solid #ccc; /* Adiciona uma borda sutil para separação */
+          margin-bottom: 5px;
+          border-radius: 4px;
+          print-color-adjust: exact;
+      }
+      /* Garante que os ícones do info-box também fiquem em preto */
+      .info-box .fas {
+          color: black !important;
+      }
     }
   </style>
 </head>
