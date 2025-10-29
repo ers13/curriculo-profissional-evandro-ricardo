@@ -107,8 +107,14 @@
     }
     .education-item strong, .course-item strong {color:#333;}
 
-    /* Informações Adicionais */
-    .info-grid{display:flex;justify-content:space-around;gap:15px;margin-top:10px;}
+    /* Informações Adicionais (CORREÇÃO DE RESPONSIVIDADE AQUI) */
+    .info-grid{
+        display:flex;
+        justify-content:space-around;
+        gap:15px;
+        margin-top:10px;
+        flex-wrap: wrap; /* NOVO: Permite quebra de linha em telas pequenas */
+    }
     .info-box{
       background:#28a745;
       color:white;
@@ -145,6 +151,15 @@
       .job-header{flex-direction:column;align-items:flex-start;}
       .contact-bar{justify-content:flex-start;padding:15px 20px;}
       .download-btn{position:static;width:100%;margin-bottom:20px;}
+      
+      /* NOVO: Força o empilhamento dos boxes de informação */
+      .info-box {
+          flex-basis: 100%;
+          margin-bottom: 15px;
+      }
+      .info-box:last-child {
+          margin-bottom: 0;
+      }
     }
     @media print{
       .download-btn{display:none;} /* Oculta o botão ao imprimir */
