@@ -47,10 +47,10 @@
     }
     .contact-item{display:flex;align-items:center;gap:8px;}
     .contact-icon{color:#007bff;font-size:16px;}
-    /* ALTERAÇÃO FEITA AQUI: text-decoration: underline; */
+    /* Links na tela: Ficam sublinhados para máxima clareza */
     .contact-item a {
         color: inherit; 
-        text-decoration: underline; /* AGORA ESTÁ SEMPRE SUBINLHADO */
+        text-decoration: underline; 
     }
     .contact-item a:hover {
         text-decoration: underline; 
@@ -176,18 +176,24 @@
       header{background:#007bff;print-color-adjust:exact;color:white;}
       .contact-icon, .section-title, .job-position{color:#007bff !important;print-color-adjust:exact;}
       .skill-item strong{color:#28a745 !important;print-color-adjust:exact;}
+      
+      /* REGRA FINAL: Remove sublinhado dos links na impressão */
+      .contact-bar a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
 
       /* CORREÇÕES PARA IMPRESSÃO (PDF) */
       .info-grid {
-          display: block; /* Desliga o flexbox para evitar problemas de alinhamento no print */
-          text-align: left; /* Alinha o bloco principal à esquerda */
+          display: block; 
+          text-align: left; 
           margin-top: 5px;
       }
       .info-box {
-          background: white !important; /* Fundo branco para não gastar tinta */
-          color: black !important; /* Cor do texto PRETO para máximo contraste */
-          text-align: left !important; /* Alinhamento do texto DENTRO do box à esquerda */
-          border: 1px solid #ccc; /* Adiciona uma borda sutil para separação */
+          background: white !important; 
+          color: black !important; 
+          text-align: left !important; 
+          border: 1px solid #ccc; 
           margin-bottom: 5px;
           border-radius: 4px;
           print-color-adjust: exact;
