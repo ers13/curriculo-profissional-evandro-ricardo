@@ -47,6 +47,14 @@
     }
     .contact-item{display:flex;align-items:center;gap:8px;}
     .contact-icon{color:#007bff;font-size:16px;}
+    /* Adiciona estilo para os links dentro da barra de contato */
+    .contact-item a {
+        color: inherit; /* Mantém a cor do texto padrão */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+    .contact-item a:hover {
+        text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    }
 
     /* Conteúdo Principal */
     .content{padding:40px;}
@@ -201,8 +209,8 @@
     </header>
     <div class="contact-bar">
       <div class="contact-item"><i class="fas fa-map-marker-alt contact-icon"></i> Praia Grande/SP</div>
-      <div class="contact-item"><i class="fas fa-envelope contact-icon"></i> tecnico.evandro@outlook.com</div>
-      <div class="contact-item"><i class="fas fa-phone contact-icon"></i> (13) 99153-5257</div>
+      <div class="contact-item"><i class="fas fa-envelope contact-icon"></i> <a href="mailto:tecnico.evandro@outlook.com">tecnico.evandro@outlook.com</a></div>
+      <div class="contact-item"><i class="fab fa-whatsapp contact-icon"></i> <a href="https://wa.me/5513991535257" target="_blank">(13) 99153-5257</a></div>
       <div class="contact-item"><i class="fas fa-car contact-icon"></i> CNH A e B – Disponibilidade Logística</div>
     </div>
     <div class="content">
